@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Symbols Nerd Font";
+  src: url("../assets/symbolsNerdFont.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "iMWriting Nerd Font";
+  src: url("../assets/iMWritingMonoNerdFont-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  font-family: "iMWriting Nerd Font", "Symbols Nerd Font";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "iMWriting Nerd Font", "Symbols Nerd Font";
+  color: rgb(200, 200, 200);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 20, 24);
+  width: 100%;
+  min-height: 8vh;
+}
+header .hcontent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+header .nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  list-style: none;
+}
+header .nav a {
+  text-decoration: none;
+  color: rgb(200, 200, 200);
+}
+header .nav .selected {
+  border-bottom: 4px solid rgb(200, 200, 200);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 90vh;
+  background-color: rgb(28, 28, 32);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 20, 24);
+  height: 10vh;
+}
+footer .hidden {
+  padding-top: 1vh;
+  color: rgb(28, 28, 32);
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10vh;
+  width: 50%;
+}
+.home img {
+  max-width: 256px;
+  height: auto;
+}
+.home .aboutme {
+  display: flex;
+  flex-direction: column;
+}
+.home .aboutme .namehl {
+  background: linear-gradient(90deg, rgb(255, 107, 107), rgb(255, 216, 107), rgb(107, 255, 218), rgb(107, 107, 255), rgb(255, 107, 107));
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  display: inline-block;
+  animation: gradient-rotate 8s linear infinite;
+}
+@keyframes gradient-rotate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: 5vh;
+}
+.about .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .profile img {
+  max-width: 256px;
+  height: auto;
+}
+.about .profile .description {
+  display: flex;
+  flex-direction: column;
+}
+.about .profile .description h1 {
+  text-decoration: underline;
+}
+.about .content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  margin-top: 5vh;
+  gap: 2vh;
+}
+.about .content h2 {
+  text-align: center;
+  margin: 2vh;
+}
+.about .content .list {
+  list-style: disc;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+.about .content .list ul {
+  list-style: circle;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/*# sourceMappingURL=style.css.map */

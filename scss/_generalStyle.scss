@@ -1,0 +1,63 @@
+@use 'variables' as vars;
+
+* {
+    font-family: "iMWriting Nerd Font", "Symbols Nerd Font";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'iMWriting Nerd Font', 'Symbols Nerd Font';
+    color: vars.$fontColor;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: vars.$bgColor2;
+    width: 100%;
+    min-height: 8vh;
+    .hcontent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+    }
+    .nav {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: vars.$fontColor;
+        }
+        .selected {
+            border-bottom: 4px solid vars.$fontColor;
+        }
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 90vh;
+    background-color: vars.$bgColor1;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: vars.$bgColor2;
+    height: 10vh;
+    .hidden {
+        padding-top: 1vh;
+        color: vars.$bgColor1;
+    }
+}

@@ -1,0 +1,30 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10vh;
+    width: 50%;
+    img {
+        max-width: 256px;
+        height: auto;
+    }
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+        .namehl {
+            background: linear-gradient(90deg, rgba(255, 107, 107, 1), rgba(255, 216, 107, 1), rgba(107, 255, 218, 1), rgba(107, 107, 255, 1), rgba(255, 107, 107, 1));
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+            display: inline-block;
+            animation: gradient-rotate 8s linear infinite;
+            @keyframes gradient-rotate {
+                0%   {background-position: 0% 50%;}
+                50%  {background-position: 100% 50%;}
+                100% {background-position: 0% 50%;}
+            }
+        }
+    }
+}
