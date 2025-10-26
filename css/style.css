@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Symbols Nerd Font";
-  src: url("../assets/symbolsNerdFont.ttf") format("woff2");
+  src: url("../assets/symbolsNerdFont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "iMWriting Nerd Font";
-  src: url("../assets/iMWritingMonoNerdFont-Regular.ttf") format("woff2");
+  src: url("../assets/iMWritingMonoNerdFont-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -37,6 +37,12 @@ header .hcontent {
   align-items: center;
   justify-content: space-between;
   width: 50%;
+}
+header .h1 {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
 }
 header .nav {
   display: flex;
@@ -68,6 +74,7 @@ footer {
   align-items: center;
   background-color: rgb(20, 20, 24);
   height: 10vh;
+  padding-top: 1vh;
 }
 footer .hidden {
   padding-top: 1vh;
@@ -90,12 +97,12 @@ footer .hidden {
   flex-direction: column;
 }
 .home .aboutme .namehl {
+  font-family: "iMWriting Nerd Font", "Symbols Nerd Font";
   background: linear-gradient(90deg, rgb(255, 107, 107), rgb(255, 216, 107), rgb(107, 255, 218), rgb(107, 107, 255), rgb(255, 107, 107));
   background-size: 400% 400%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-weight: 700;
   display: inline-block;
   animation: gradient-rotate 8s linear infinite;
 }
@@ -159,6 +166,39 @@ footer .hidden {
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: left;
+}
+
+.pcontent h1 {
+  text-align: center;
+  margin-bottom: 2vh;
+}
+.pcontent .projectcards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.pcontent .projectcards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(20, 20, 24);
+}
+.pcontent .projectcards .card .card-img-top {
+  margin-top: 1rem;
+  align-self: center;
+  width: 80%;
+}
+.pcontent .projectcards .card .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.pcontent .projectcards .card .btn {
+  margin-top: auto;
+  align-self: center;
+  background-color: rgb(28, 28, 32);
+  border-color: rgb(200, 200, 200);
 }
 
 /*# sourceMappingURL=style.css.map */

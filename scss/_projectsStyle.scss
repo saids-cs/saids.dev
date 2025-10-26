@@ -1,0 +1,36 @@
+@use 'variables' as vars;
+
+.pcontent {
+    h1 {
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+    .projectcards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: vars.$bgColor2;
+            .card-img-top {
+                margin-top: 1rem;
+                align-self: center;
+                width: 80%;
+            }
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+            .btn {
+                margin-top: auto;
+                align-self: center;
+                background-color: vars.$bgColor1;
+                border-color: vars.$fontColor;
+            }
+        }
+    }
+}

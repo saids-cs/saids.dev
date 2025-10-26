@@ -12,12 +12,12 @@
         display: flex;
         flex-direction: column;
         .namehl {
+            font-family: 'iMWriting Nerd Font', 'Symbols Nerd Font';
             background: linear-gradient(90deg, rgba(255, 107, 107, 1), rgba(255, 216, 107, 1), rgba(107, 255, 218, 1), rgba(107, 107, 255, 1), rgba(255, 107, 107, 1));
             background-size: 400% 400%;
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            font-weight: 700;
             display: inline-block;
             animation: gradient-rotate 8s linear infinite;
             @keyframes gradient-rotate {
