@@ -186,7 +186,6 @@ footer .hidden {
   flex-direction: column;
   justify-content: space-between;
   background-color: rgb(20, 20, 24);
-  color: rgb(200, 200, 200);
 }
 .pcontent .projectcards .card .card-img-top {
   margin-top: 1rem;
@@ -197,6 +196,7 @@ footer .hidden {
   display: flex;
   flex-direction: column;
   height: 100%;
+  color: rgb(200, 200, 200);
 }
 .pcontent .projectcards .card .btn {
   margin-top: auto;
