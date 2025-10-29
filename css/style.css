@@ -73,11 +73,11 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: rgb(20, 20, 24);
-  height: 10vh;
-  padding-top: 1vh;
+  min-height: 10vh;
+  padding-top: 2rem;
 }
 footer .hidden {
-  padding-top: 1vh;
+  padding-top: 1rem;
   color: rgb(28, 28, 32);
 }
 

@@ -61,10 +61,10 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: vars.$bgColor2;
-    height: 10vh;
-    padding-top: 1vh;
+    min-height: 10vh;
+    padding-top: 2rem;
     .hidden {
-        padding-top: 1vh;
+        padding-top: 1rem;
         color: vars.$bgColor1;
     }
 }
