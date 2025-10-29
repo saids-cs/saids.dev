@@ -33,11 +33,13 @@ header {
     }
     .nav {
         display: flex;
+        flex-direction: row;
         gap: 1rem;
-        align-items: center;
         list-style: none;
         a {
             text-decoration: none;
+            min-width: 64px;
+            text-align: center;
             color: vars.$fontColor;
         }
         .selected {
@@ -61,7 +63,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: vars.$bgColor2;
-    min-height: 10vh;
+    min-height: auto;
     padding-top: 2rem;
     .hidden {
         padding-top: 1rem;

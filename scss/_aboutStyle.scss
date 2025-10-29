@@ -1,3 +1,5 @@
+@use 'variables' as vars;
+
 .about {
     display: flex;
     flex-direction: column;
@@ -30,25 +32,34 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 2rem;
-        //gap: 1rem;
-        h2 {
-            text-align: center;
-            margin: 1rem;
-        }
-        .list {
-            list-style: disc;
-            // margin-top: 1rem;
-            margin-bottom: 1rem;
-            text-align: left;
-            padding-left: 8rem;
-            padding-right: 8rem;
-            ul {
-                list-style: circle;
-                padding-left: 2rem;
-                margin-top: 1rem;
+        // margin-top: 2rem;
+        // gap: 1rem;
+        div {
+            border-top: 1px solid vars.$details;
+            padding-top: 1rem;
+            margin-top: 2rem;
+            h2 {
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                text-align: center;
+                margin: 1rem;
+            }
+            .list {
+                list-style: " ";
+                // list-style: disc;
+                // margin-top: 1rem;
                 margin-bottom: 1rem;
                 text-align: left;
+                padding-left: 8rem;
+                padding-right: 8rem;
+                ul {
+                    list-style: " ";
+                    // list-style: circle;
+                    padding-left: 2rem;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    text-align: left;
+                }
             }
         }
     }

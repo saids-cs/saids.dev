@@ -46,12 +46,14 @@ header .h1 {
 }
 header .nav {
   display: flex;
+  flex-direction: row;
   gap: 1rem;
-  align-items: center;
   list-style: none;
 }
 header .nav a {
   text-decoration: none;
+  min-width: 64px;
+  text-align: center;
   color: rgb(200, 200, 200);
 }
 header .nav .selected {
@@ -73,7 +75,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: rgb(20, 20, 24);
-  min-height: 10vh;
+  min-height: auto;
   padding-top: 2rem;
 }
 footer .hidden {
@@ -150,21 +152,27 @@ footer .hidden {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.about .content div {
+  border-top: 1px solid rgba(200, 200, 200, 0.4);
+  padding-top: 1rem;
   margin-top: 2rem;
 }
-.about .content h2 {
+.about .content div h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
   text-align: center;
   margin: 1rem;
 }
-.about .content .list {
-  list-style: disc;
+.about .content div .list {
+  list-style: "\f444  ";
   margin-bottom: 1rem;
   text-align: left;
   padding-left: 8rem;
   padding-right: 8rem;
 }
-.about .content .list ul {
-  list-style: circle;
+.about .content div .list ul {
+  list-style: "\f054  ";
   padding-left: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
