@@ -15,6 +15,7 @@
     .postscards {
         .card {
             background-color: vars.$bgColor2;
+            border: 2px solid vars.$details;
             .col-md-8 {
                 .card-body {
                     color: vars.$fontColor;

@@ -15,6 +15,7 @@
             flex-direction: column;
             justify-content: space-between;
             background-color: vars.$bgColor2;
+            border: 2px solid vars.$details;
             .card-img-top {
                 margin-top: 1rem;
                 align-self: center;
