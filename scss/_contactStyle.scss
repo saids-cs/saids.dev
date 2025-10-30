@@ -18,9 +18,10 @@
         background-color: vars.$bgColor1;
         border-radius: 4px;
         border: 2px solid vars.$details;
-        ::placeholder {
-            color: vars.$details;
-        }
+        
+    }
+    input::placeholder {
+        color: vars.$details;
     }
     textarea {
         height: 8rem;
@@ -31,9 +32,12 @@
         background-color: vars.$bgColor1;
         border-radius: 4px;
         border: 2px solid vars.$details;
-        resize: none; // evita que el usuario cambie el tamaño
-        text-align: left; // asegura que escriba desde la izquierda
+        resize: none;
+        text-align: left;
         vertical-align: top;
+    }
+    textarea::placeholder {
+        color: vars.$details;
     }
     button {
         align-self: center;

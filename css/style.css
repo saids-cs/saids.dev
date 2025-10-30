@@ -279,7 +279,7 @@ footer .hidden {
   border-radius: 4px;
   border: 2px solid rgba(200, 200, 200, 0.4);
 }
-.contact input ::placeholder {
+.contact input::placeholder {
   color: rgba(200, 200, 200, 0.4);
 }
 .contact textarea {
@@ -294,6 +294,9 @@ footer .hidden {
   resize: none;
   text-align: left;
   vertical-align: top;
+}
+.contact textarea::placeholder {
+  color: rgba(200, 200, 200, 0.4);
 }
 .contact button {
   align-self: center;
