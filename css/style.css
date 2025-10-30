@@ -356,17 +356,6 @@ footer .hidden {
     margin: 0;
   }
 }
-@media (max-width: 575.98px) {
-  .home {
-    flex-direction: column;
-    width: 90%;
-    margin: 2rem auto;
-  }
-  .home img {
-    order: -1;
-    max-width: 200px;
-  }
-}
 @media (max-width: 767.98px) {
   .home {
     flex-direction: column;
@@ -378,18 +367,7 @@ footer .hidden {
     max-width: 200px;
   }
 }
-@media (max-width: 991.98px) {
-  .home {
-    flex-direction: column;
-    width: 90%;
-    margin: 2rem auto;
-  }
-  .home img {
-    order: -1;
-    max-width: 200px;
-  }
-}
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .about {
     width: 100%;
     margin-left: 0;
