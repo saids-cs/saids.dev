@@ -54,7 +54,7 @@ header {
             margin-left: 8rem;
             a {
                 text-decoration: none;
-                min-width: 80px;
+                min-width: fit-content;
                 text-align: center;
                 color: vars.$fontColor;
             }

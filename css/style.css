@@ -69,7 +69,7 @@ header .hcontent .nav {
 }
 header .hcontent .nav a {
   text-decoration: none;
-  min-width: 80px;
+  min-width: fit-content;
   text-align: center;
   color: rgb(200, 200, 200);
 }
