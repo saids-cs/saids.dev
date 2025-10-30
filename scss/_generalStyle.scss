@@ -42,7 +42,7 @@ header {
                 color: vars.$fontColor;
             }
         }
-        .collapse { //I need to use important because of bootstrap...
+        .collapse {
             display: flex;
             visibility: visible;
         }

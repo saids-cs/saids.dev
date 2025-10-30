@@ -18,7 +18,7 @@
         background-color: vars.$bgColor1;
         border-radius: 4px;
         border: 2px solid vars.$details;
-        
+        color: vars.$fontColor;
     }
     input::placeholder {
         color: vars.$details;
@@ -35,6 +35,7 @@
         resize: none;
         text-align: left;
         vertical-align: top;
+        color: vars.$fontColor;
     }
     textarea::placeholder {
         color: vars.$details;

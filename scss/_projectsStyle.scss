@@ -1,4 +1,5 @@
 @use 'variables' as vars;
+@use 'sass:color';
 
 .pcontent {
     margin-top: 4rem;
@@ -35,6 +36,16 @@
                 align-self: center;
                 background-color: vars.$bgColor1;
                 border-color: vars.$fontColor;
+                transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+                &:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+                    background-color: color.adjust(vars.$bgColor1, $lightness: -5%);
+                }
+                &:active {
+                    transform: translateY(-1px);
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                }
             }
         }
     }
