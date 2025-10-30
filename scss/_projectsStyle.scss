@@ -1,6 +1,8 @@
 @use 'variables' as vars;
 
 .pcontent {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     h1 {
         text-align: center;
         margin-bottom: 2vh;
@@ -10,6 +12,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 1rem;
+        justify-content: center;
         .card {
             display: flex;
             flex-direction: column;

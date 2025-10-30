@@ -18,6 +18,9 @@
         background-color: vars.$bgColor1;
         border-radius: 4px;
         border: 2px solid vars.$details;
+        ::placeholder {
+            color: vars.$details;
+        }
     }
     textarea {
         height: 8rem;
