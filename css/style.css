@@ -382,6 +382,7 @@ footer .hidden {
   }
   .about .profile .description {
     width: 100%;
+    order: 1;
   }
   .about .content div {
     width: 100%;
