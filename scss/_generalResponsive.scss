@@ -1,4 +1,3 @@
-// Móviles pequeños
 @media (max-width: 767.98px) {
     header {
         padding: 1rem;
@@ -7,7 +6,6 @@
             flex-direction: row;
             text-align: center;
             justify-content: space-between;
-            // align-items: flex-start;
             width: 100%;
             flex-wrap: wrap;
             h1 {
@@ -21,25 +19,27 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                // align-self: flex-end;
             }
-            .collapse { //I need to use important because of bootstrap...
+            .nav {
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: center;
+                margin: 0;
                 order: 1;
                 width: 100%;
+                a {
+                    min-width: 80px;
+                }
+            }
+            .collapse { 
                 &.show {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                 }
                 &:not(.show) {
-                    display: none !important;
+                    display: none !important; 
                 }
-            }
-            .nav {
-                flex-direction: column;
-                justify-content: right;
-                text-align: center;
-                margin: 0;
             }
         }
     }

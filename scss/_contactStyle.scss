@@ -24,7 +24,7 @@
         color: vars.$details;
     }
     textarea {
-        height: 8rem;
+        min-height: 8rem;
         min-width: 100%;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -49,5 +49,19 @@
         color: vars.$fontColor;
         border-radius: 4px;
         border: 2px solid vars.$details;
+        transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            z-index: 10;
+        }  
+        &:active {
+            transform: scale(1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        a {
+            text-decoration: none;
+            color: vars.$fontColor;
+        }
     }
 }

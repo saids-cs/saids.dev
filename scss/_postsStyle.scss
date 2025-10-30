@@ -13,12 +13,34 @@
         text-align: center;
     }
     .postscards {
-        .card {
+        a {
+            text-decoration: none;
+            color: vars.$fontColor;
+            .card {
             background-color: vars.$bgColor2;
             border: 2px solid vars.$details;
-            .col-md-8 {
-                .card-body {
-                    color: vars.$fontColor;
+            transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+                z-index: 10;
+            }  
+            &:active {
+                transform: scale(1);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            }
+            }
+            .row {
+                .col-md-8 {
+                    .card-body {
+                        color: inherit;
+                        .card-title {
+                            color: inherit;
+                        }
+                        .card-text {
+                            color: inherit;
+                        }
+                    }
                 }
             }
         }
