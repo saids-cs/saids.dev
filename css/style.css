@@ -39,37 +39,41 @@ header .hcontent {
   min-width: 50%;
   position: relative;
 }
-header .h1 {
+header .hcontent .h1 {
   font-size: 10px;
   margin: 0;
   margin-right: 8rem;
   padding: 0;
   font-weight: bold;
 }
-header .menu-toggle {
+header .hcontent .menu-toggle {
   background: none;
   border: none;
   cursor: pointer;
   display: none;
 }
-header .collapse {
-  display: flex !important;
+header .hcontent .menu-toggle span {
+  padding: 1rem;
+  color: rgb(200, 200, 200);
+}
+header .hcontent .collapse {
+  display: flex;
   visibility: visible;
 }
-header .nav {
+header .hcontent .nav {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   list-style: none;
   margin-left: 8rem;
 }
-header .nav a {
+header .hcontent .nav a {
   text-decoration: none;
   min-width: 64px;
   text-align: center;
   color: rgb(200, 200, 200);
 }
-header .nav .selected {
+header .hcontent .nav .selected {
   border-bottom: 4px solid rgb(200, 200, 200);
 }
 
@@ -309,38 +313,43 @@ footer .hidden {
   border: 2px solid rgba(200, 200, 200, 0.4);
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   header {
     padding: 1rem;
   }
   header .hcontent {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    align-items: flex-start;
+    justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
   }
-  header h1 {
+  header .hcontent h1 {
     margin: 0;
   }
-  header .menu-toggle {
+  header .hcontent .menu-toggle {
+    flex-direction: column;
     background: none;
     border: none;
     cursor: pointer;
-    display: block;
-    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  header .collapse {
+  header .hcontent .collapse {
+    order: 1;
     width: 100%;
   }
-  header .collapse.show {
+  header .hcontent .collapse.show {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  header .collapse:not(.show) {
+  header .hcontent .collapse:not(.show) {
     display: none !important;
   }
-  header .nav {
+  header .hcontent .nav {
     flex-direction: column;
     justify-content: right;
     text-align: center;
