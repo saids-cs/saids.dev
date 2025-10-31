@@ -25,10 +25,12 @@ header {
         justify-content: space-between;
         min-width: 50%;
         position: relative;
-        a {
-            text-decoration: none;
-            color: vars.$fontColor;
-            h1 {
+        // a {
+        //     text-decoration: none;
+        //     color: vars.$fontColor;
+            
+        // }
+        h1 {
                 text-decoration: none;
                 margin: 0;
                 margin-right: 8rem;
@@ -36,7 +38,6 @@ header {
                 font-weight: bold;
                 color: vars.$fontColor;
             }
-        }
         .menu-toggle {
             background: none;
             border: none;
