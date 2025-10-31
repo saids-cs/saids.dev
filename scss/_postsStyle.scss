@@ -33,13 +33,13 @@
             .row {
                 .col-md-8 {
                     .card-body {
-                        color: inherit;
-                        .card-title {
-                            color: inherit;
-                        }
-                        .card-text {
-                            color: inherit;
-                        }
+                        color: vars.$fontColor;
+                        // .card-title {
+                        //     color: inherit;
+                        // }
+                        // .card-text {
+                        //     color: inherit;
+                        // }
                     }
                 }
             }

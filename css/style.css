@@ -284,13 +284,7 @@ footer .hidden {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 .postcontent .postscards a .row .col-md-8 .card-body {
-  color: inherit;
-}
-.postcontent .postscards a .row .col-md-8 .card-body .card-title {
-  color: inherit;
-}
-.postcontent .postscards a .row .col-md-8 .card-body .card-text {
-  color: inherit;
+  color: rgb(200, 200, 200);
 }
 
 .contact {
