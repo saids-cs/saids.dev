@@ -19,6 +19,15 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                &[aria-expanded="true"] {
+                    .menu-icon {
+                        transform: rotate(180deg);
+                    }
+                }
+                .menu-icon {
+                    display: inline-block;
+                    transition: transform 0.3s ease-in-out;
+                }
             }
             .nav {
                 flex-direction: column;
