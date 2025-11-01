@@ -13,7 +13,7 @@ This project is an **static** website that use fundamental technologies to ensur
 * **HTML5:** Semantic strucuture of the content.
 * **SCSS (Sass):** CSS preprocessor used for more organized, maintainable, and modular style writing.
 
-## 🚀 How to see the website (Doesn't require installation)
+## 🚀 How to view the website (No installation required)
 
 Since this project is a static website, it does not require installation.
 
