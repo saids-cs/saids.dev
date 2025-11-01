@@ -24,11 +24,11 @@ Just open the **index.html** into you browser.
 The code is clearly organized and includes comments to facilitate navigation and maintenance.
 
 saids.dev/\
-├── assets/ # Recursos estáticos (imágenes, fuentes, iconos, etc.)\
-├── css/ # Archivos CSS compilados y su "source map"\
-│ ├── style.css # Hoja de estilos principal (generada desde SCSS)\
+├── assets/ # Static resources (images, fonts, icons, etc.)\
+├── css/ # Compiled CSS files and their "source map"\
+│ ├── style.css # Main stylesheet (generated from SCSS)\
 │ └── style.css.map\
-├── pages/ # Secciones principales del sitio web (About, Contacto, Proyectos, etc.)\
+├── pages/ # Main sections of the website (About, Contact, Projects, etc.)\
 │ ├── about.html\
 │ ├── contact.html\
 │ ├── posts.html\
