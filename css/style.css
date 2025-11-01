@@ -316,6 +316,7 @@ footer .hidden {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Styles for the Posts page layout */
 .postcontent {
   display: flex;
   flex-direction: column;
@@ -323,41 +324,60 @@ footer .hidden {
   margin-bottom: 4rem;
   margin-top: 4rem;
   width: 50%;
+  /* Main title section */
 }
 .postcontent h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+.postcontent {
+  /* Container for all post cards */
+}
 .postcontent .postscards a {
   text-decoration: none;
   color: rgb(200, 200, 200);
+  /* Individual post card style */
 }
 .postcontent .postscards a .card {
   display: flex;
   background-color: rgb(20, 20, 24);
   border: 2px solid rgba(200, 200, 200, 0.4);
   transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  /* Hover animation for depth and interaction */
 }
 .postcontent .postscards a .card:hover {
   transform: scale(1.02);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
+.postcontent .postscards a .card {
+  /* Slightly reduced scale when pressed */
+}
 .postcontent .postscards a .card:active {
   transform: scale(1);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.postcontent .postscards a {
+  /* Bootstrap grid alignment for post card content */
 }
 .postcontent .postscards a .row .col-md-8 .card-body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  /* Post title */
 }
 .postcontent .postscards a .row .col-md-8 .card-body .card-title {
   color: rgb(200, 200, 200);
 }
+.postcontent .postscards a .row .col-md-8 .card-body {
+  /* Post excerpt or summary text */
+}
 .postcontent .postscards a .row .col-md-8 .card-body .card-text {
   color: rgb(200, 200, 200);
+}
+.postcontent .postscards a .row .col-md-8 .card-body {
+  /* Metadata such as date or category */
 }
 .postcontent .postscards a .row .col-md-8 .card-body .text-secondary {
   color: rgba(200, 200, 200, 0.4);
@@ -566,11 +586,7 @@ footer .hidden {
 }
 @media (max-width: 767.98px) {
   .postcontent {
-    width: 90%;
-  }
-}
-@media (max-width: 991.98px) {
-  .postcontent {
+    /* Expand content width for better readability on smaller screens */
     width: 90%;
   }
 }
