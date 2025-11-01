@@ -87,7 +87,7 @@ header { // Header section
                     transition: width 0.2s ease-out; 
                 }
             }
-
+            
             a:not(.selected):hover::after { // Animation when hovering over the element if it is not the selected one
                 width: 100%; // It makes the border slide and appear
             }
