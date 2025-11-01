@@ -34,11 +34,15 @@
             .row {
                 .col-md-8 {
                     .card-body {
-                        color: vars.$fontColor;
                         display: flex;
                         flex-direction: column;
                         height: 100%;
-                        color: vars.$details;
+                        .card-title {
+                            color: vars.$fontColor;
+                        }
+                        .card-text {
+                            color: vars.$fontColor;
+                        }
                         .text-secondary {
                             color: vars.$details;
                         }

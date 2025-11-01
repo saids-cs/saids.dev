@@ -349,11 +349,15 @@ footer .hidden {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .postcontent .postscards a .row .col-md-8 .card-body {
-  color: rgb(200, 200, 200);
   display: flex;
   flex-direction: column;
   height: 100%;
-  color: rgba(200, 200, 200, 0.4);
+}
+.postcontent .postscards a .row .col-md-8 .card-body .card-title {
+  color: rgb(200, 200, 200);
+}
+.postcontent .postscards a .row .col-md-8 .card-body .card-text {
+  color: rgb(200, 200, 200);
 }
 .postcontent .postscards a .row .col-md-8 .card-body .text-secondary {
   color: rgba(200, 200, 200, 0.4);
