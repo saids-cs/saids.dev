@@ -25,18 +25,18 @@ The code is clearly organized and includes comments to facilitate navigation and
 
 saids.dev/
 ├── assets/ # Recursos estáticos (imágenes, fuentes, iconos, etc.)\
-├── css/ # Archivos CSS compilados y su "source map"
-│ ├── style.css # Hoja de estilos principal (generada desde SCSS)
-│ └── style.css.map
-├── pages/ # Secciones principales del sitio web (About, Contacto, Proyectos, etc.)
-│ ├── about.html
-│ ├── contact.html
-│ ├── posts.html
-│ └── projects.html
-├── scss/ # Todo el código fuente del preprocesador SCSS
-│ ├── style.scss # Archivo SCSS principal
-│ ├── _variables.scss # Definición de colores, fuentes y otros valores reusables
-│ └── _generalStyle.scss # Estilos generales, resets y utilidades
+├── css/ # Archivos CSS compilados y su "source map"\
+│ ├── style.css # Hoja de estilos principal (generada desde SCSS)\
+│ └── style.css.map\
+├── pages/ # Secciones principales del sitio web (About, Contacto, Proyectos, etc.)\
+│ ├── about.html\
+│ ├── contact.html\
+│ ├── posts.html\
+│ └── projects.html\
+├── scss/ # Todo el código fuente del preprocesador SCSS\
+│ ├── style.scss # Archivo SCSS principal\
+│ ├── _variables.scss # Definición de colores, fuentes y otros valores reusables\
+│ └── _generalStyle.scss # Estilos generales, resets y utilidades\
 └── index.html # Página de inicio / Landing Page
 
 ## ⚙️ Development Process (If you wish to modify the styles)
