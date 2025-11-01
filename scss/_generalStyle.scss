@@ -121,6 +121,7 @@ footer { // Footer section
     background-color: vars.$bgColor2; // Secondary background color
     min-height: auto;
     padding-top: 2rem;
+    padding-bottom: 0.5rem;
     p {
         margin-left: 2rem;
         margin-right: 2rem;
@@ -128,8 +129,10 @@ footer { // Footer section
 
     .hidden { // Hidden text, just for fun
         padding-top: 1rem;
+        padding-bottom: 1rem;
         margin-left: 2rem;
         margin-right: 2rem;
+        margin-bottom: 0;
         color: vars.$bgColor1;
     }
 }

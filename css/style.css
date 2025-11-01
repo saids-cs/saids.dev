@@ -121,6 +121,7 @@ footer {
   background-color: rgb(20, 20, 24);
   min-height: auto;
   padding-top: 2rem;
+  padding-bottom: 0.5rem;
 }
 footer p {
   margin-left: 2rem;
@@ -128,8 +129,10 @@ footer p {
 }
 footer .hidden {
   padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  margin-bottom: 0;
   color: rgb(28, 28, 32);
 }
 
@@ -137,7 +140,6 @@ footer .hidden {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10vh;
   width: 50%;
 }
 .home img {
@@ -447,7 +449,8 @@ footer .hidden {
   .home {
     flex-direction: column;
     width: 90%;
-    margin: 2rem auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .home img {
     order: -1;
@@ -482,7 +485,7 @@ footer .hidden {
     padding-left: 1rem;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1530px) {
   .postcontent {
     width: 90%;
   }

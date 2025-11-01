@@ -2,7 +2,8 @@
     .home { // Home section
         flex-direction: column; // Stack content vertically instead of side-by-side
         width: 90%;             // Reduce width for better fit on narrow screens
-        margin: 2rem auto;      // Center horizontally with smaller vertical spacing
+        margin-top: 2rem;       // Set a gap between the header and the main content
+        margin-bottom: 2rem;    // Set a gap between the header and the main content
 
         img { // Profile image adjustments
             order: -1;          // Move image above the text block
