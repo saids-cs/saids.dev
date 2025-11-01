@@ -3,18 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <!-- Custom stylesheet -->
         <link rel="stylesheet" href="./css/style.css">
         <title>saids.dev</title>
     </head>
     <body>
+        <!-- ===== HEADER ===== -->
         <header>
-            <!---->
             <div class="hcontent">
+
+                <!-- Site title / home link -->
                 <a href="index.html" class="title"><h1>saids.dev</h1></a>
+
+                <!-- Mobile menu toggle button -->
                 <button class="menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="menu-icon"></span>
                 </button>
+
+                <!-- Navigation links -->
                 <div class="nav collapse" id="navMenu">
                     <a href="index.html" class="selected">home</a>
                     <a href="./pages/about.html">about</a>
@@ -24,20 +34,32 @@
                 </div>
             </div>
         </header>
+
+        <!-- ===== MAIN CONTENT ===== -->
         <main>
-            <!---->
             <div class="home">
                 <div class="aboutme">
+
+                    <!-- Intro / About section -->
                     <h1>This is <span class="namehl">Saids Ruby</span></h1>
-                    <p>Hi! My name is Saids Ruby. I'm a freelance technician, telecommunications student, open-source developer, amateur writer, surveillance system installer, gamer—or just a freak, if you prefer.</p>
+                    <p>
+                        Hi! My name is Saids Ruby. I'm a freelance technician, telecommunications student, open-source developer, amateur writer, surveillance system installer, gamer—or just a freak, if you prefer.
+                    </p>
                 </div>
+
+                <!-- Profile image -->
                 <img src="./assets/pic.png" alt="saids ruby profile picture">
             </div>
         </main>
+
+        <!-- ===== FOOTER ===== -->
         <footer>
-            <!---->
             <p>CC0 2025 - designed and developed by Saids Ruby</p>
+
+            <!-- Hidden easter egg text -->
             <p class="hidden">Hexagons are the bestagons</p>
+
+            <!-- Bootstrap JS bundle -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         </footer>
     </body>

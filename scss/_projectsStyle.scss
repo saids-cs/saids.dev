@@ -1,36 +1,50 @@
 @use 'variables' as vars;
 @use 'sass:color';
 
+
+/* Projects page content wrapper */
 .pcontent {
     margin-top: 4rem;
     margin-bottom: 4rem;
+
+    /* Page title */
     h1 {
         text-align: center;
         margin-bottom: 2vh;
     }
+
+    /* Container for all project cards */
     .projectcards {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
+
+        /* Individual project card */
         .card {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             background-color: vars.$bgColor2;
             border: 2px solid vars.$details;
+
+            /* Card image */
             .card-img-top {
                 margin-top: 1rem;
                 align-self: center;
                 width: 80%;
             }
+
+            /* Card text and content area */
             .card-body {
                 display: flex;
                 flex-direction: column;
                 height: 100%;
                 color: vars.$fontColor;
             }
+
+            /* Card button styling */
             .btn {
                 margin-top: auto;
                 align-self: center;

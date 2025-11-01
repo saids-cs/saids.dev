@@ -1,56 +1,35 @@
-@media (max-width: 767.98px) {
-    .about {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        .profile {
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            .description {
-                width: 100%;
-                order: 1;
-            }
-        }
-        .content {
-            div {
-                width: 100%;
-                .list {
-                    padding-left: 4rem;
-                    padding-right: 4rem;
-                    ul {
-                        padding-left: 1rem;
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media (max-width: 991.98px) {
     .about {
-        width: 100%;
+        width: 100%; // Full width on smaller screens
         margin-left: 0;
         margin-right: 0;
+
+        /* Stack profile vertically */
         .profile {
             width: 90%;
             display: flex;
-            flex-direction: column;
+            flex-direction: column; // Change layout from row -> column
             align-items: center;
             text-align: center;
+
+            /* Ensure text stays below the image */
             .description {
                 width: 100%;
-                order: 1;
+                order: 1; // Forces description to appear after the image
             }
         }
+
+        /* Adjust inner content layout */
         .content {
             div {
                 width: 100%;
+
+                /* Reduce padding for smaller viewports */
                 .list {
                     padding-left: 4rem;
                     padding-right: 4rem;
+
+                    /* Compact nested list spacing */
                     ul {
                         padding-left: 1rem;
                     }

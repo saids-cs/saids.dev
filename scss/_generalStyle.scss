@@ -1,30 +1,40 @@
 @use 'variables' as vars;
 
+
+/* Global reset and font */
 * {
-    font-family: "iMWriting Nerd Font", "Symbols Nerd Font";
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    font-family: "iMWriting Nerd Font", "Symbols Nerd Font"; // default fonts
+    box-sizing: border-box; // Include padding and border in width/height
+    margin: 0; // Remove default margin
+    padding: 0; // Remove default padding
 }
 
+
+/* Body styles */
 body {
     font-family: 'iMWriting Nerd Font', 'Symbols Nerd Font';
-    color: vars.$fontColor;
+    color: vars.$fontColor; // Main font color
 }
 
+
+/* Header section */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: vars.$bgColor2;
+    background-color: vars.$bgColor2; // Secondary background color
     width: 100%;
     min-height: 8vh;
+
+    /* Header inner container */
     .hcontent {
         display: flex;
         align-items: center;
         justify-content: space-between;
         min-width: 50%;
         position: relative;
+
+        /* Links in header (logo/title) */
         a {
             color: inherit;
             text-decoration: none;
@@ -32,27 +42,33 @@ header {
             h1 {
                 text-decoration: none;
                 margin: 0;
-                margin-right: 8rem;
+                margin-right: 8rem; // Spacing from nav
                 padding: 0;
                 font-weight: bold;
                 color: inherit;
                 color: vars.$fontColor;
             }
         }
+
+        /* Menu toggle button (for small screens) */
         .menu-toggle {
             background: none;
             border: none;
             cursor: pointer;
-            display: none;
+            display: none; // Hidden by default, shown via media query
             span {
                 padding: 1rem;
                 color: vars.$fontColor;
             }
         }
+
+        /* Collapsible nav container */
         .collapse {
             display: flex;
             visibility: visible;
         }
+
+        /* Navigation links */
         .nav {
             display: flex;
             flex-direction: row;
@@ -65,6 +81,8 @@ header {
                 text-align: center;
                 color: vars.$fontColor;
             }
+
+            /* Selected page indicator */
             .selected {
                 border-bottom: 4px solid vars.$fontColor;
             }
@@ -72,27 +90,31 @@ header {
     }
 }
 
+/* Main content section */
 main {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 90vh;
-    background-color: vars.$bgColor1;
+    background-color: vars.$bgColor1; // Primary background color
 }
 
+/* Footer section */
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: vars.$bgColor2;
+    background-color: vars.$bgColor2; // Secondary background color
     min-height: auto;
     padding-top: 2rem;
     p {
         margin-left: 2rem;
         margin-right: 2rem;
     }
+
+    /* Hidden text, just for fun */
     .hidden {
         padding-top: 1rem;
         margin-left: 2rem;

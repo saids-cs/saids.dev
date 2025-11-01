@@ -4,13 +4,19 @@
     justify-content: space-between;
     margin: 10vh;
     width: 50%;
+
+    /* Profile image */
     img {
         max-width: 256px;
         height: auto;
     }
+
+    /* “About me” text block */
     .aboutme {
         display: flex;
         flex-direction: column;
+
+        /* Highlighted name with animated gradient */
         .namehl {
             font-family: 'iMWriting Nerd Font', 'Symbols Nerd Font';
             background: linear-gradient(90deg, rgba(255, 107, 107, 1), rgba(255, 216, 107, 1), rgba(107, 255, 218, 1), rgba(107, 107, 255, 1), rgba(255, 107, 107, 1));
@@ -20,6 +26,8 @@
             color: transparent;
             display: inline-block;
             animation: gradient-rotate 8s linear infinite;
+
+            /* Gradient animation */
             @keyframes gradient-rotate {
                 0%   {background-position: 0% 50%;}
                 50%  {background-position: 100% 50%;}

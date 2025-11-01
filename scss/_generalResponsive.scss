@@ -1,53 +1,67 @@
-@media (max-width: 767.98px) {
+@media (max-width: 787.98px) {
+
+    /* Header adjustments */
     header {
-        padding: 1rem;
+        padding: 1rem; // Add breathing space around content
         .hcontent {
             display: flex;
             flex-direction: row;
             text-align: center;
             justify-content: space-between;
             width: 100%;
-            flex-wrap: wrap;
+            flex-wrap: wrap; // Allow wrapping for smaller widths
+
+            /* Logo / Title */
             h1 {
-                margin: 0;
+                margin: 0; // Remove large margin from desktop version
             }
+
+            /* Menu toggle button (mobile navigation) */
             .menu-toggle {
                 flex-direction: column;
                 background:none;
                 border: none;
                 cursor: pointer;
-                display: flex;
+                display: flex; // Make toggle visible on small screens
                 justify-content: center;
                 align-items: center;
+
+                /*Rotate icon when menu is open*/
                 &[aria-expanded="true"] {
                     .menu-icon {
                         transform: rotate(180deg);
                     }
                 }
+
+                /* Smooth rotation animation for icon */
                 .menu-icon {
                     display: inline-block;
                     transition: transform 0.3s ease-in-out;
                 }
             }
+
+            /* Mobile nav layout */
             .nav {
-                flex-direction: column;
+                flex-direction: column; // Stack links vertically
                 justify-content: flex-start;
                 text-align: center;
                 margin: 0;
-                order: 1;
+                order: 1; // Ensure it appears below header title
                 width: 100%;
                 a {
-                    min-width: 80px;
+                    min-width: 80px; // Prevent links from collapsing too much
                 }
             }
+
+            /* Collapsible behavior for mobile menu */
             .collapse { 
                 &.show {
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
+                    align-items: center; // Center align opened menu items
                 }
                 &:not(.show) {
-                    display: none !important; 
+                    display: none; // Hide when collapsed
                 }
             }
         }
