@@ -25,7 +25,7 @@ The code is clearly organized and includes comments to facilitate navigation and
 
 ## ⚙️ Development Process (If you wish to modify the styles)
 
-If you plan to modify the `.scss` files, you will need to compile the code to CSS.
+If you plan to modify the `.SCSS` files, you will need to compile the code to CSS.
 
 1.	**REQUIREMENT:** [Sass](https://sass-lang.com/install/) must be installed.
 	```bash
@@ -43,6 +43,5 @@ This work is dedicated to the Public Domain under the **CC0 1.0 Universal Public
 
 This means you are free to copy, modify, and distribute the code without asking for permission.
 
-	```
-	Created by Saids Ruby
-	```
+
+# Created by Saids Ruby
