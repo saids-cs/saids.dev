@@ -15,7 +15,7 @@ This project is an **static** website that use fundamental technologies to ensur
 
 ## 🚀 How to see the website (Doesn't require installation)
 
-Because this proyect it's an astatic website doesn't require installation.
+Because this project it's an astatic website doesn't require installation.
 
 Just open the **index.html** into you browser.
 
