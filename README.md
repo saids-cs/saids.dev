@@ -23,7 +23,7 @@ Just open the **index.html** into you browser.
 
 The code is clearly organized and includes comments to facilitate navigation and maintenance.
 
-saids.dev/
+saids.dev/\
 ├── assets/ # Recursos estáticos (imágenes, fuentes, iconos, etc.)\
 ├── css/ # Archivos CSS compilados y su "source map"\
 │ ├── style.css # Hoja de estilos principal (generada desde SCSS)\
