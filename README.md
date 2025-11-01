@@ -15,7 +15,7 @@ This project is an **static** website that use fundamental technologies to ensur
 
 ## 🚀 How to see the website (Doesn't require installation)
 
-Because this project it's an astatic website doesn't require installation.
+Since this project is a static website, it does not require installation.
 
 Just open the **index.html** into you browser.
 
@@ -44,4 +44,4 @@ This work is dedicated to the Public Domain under the **CC0 1.0 Universal Public
 This means you are free to copy, modify, and distribute the code without asking for permission.
 
 
-# Created by Saids Ruby
+`Created by Saids Ruby`
