@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Symbols Nerd Font";
   src: url("../assets/symbolsNerdFont.ttf") format("truetype");
@@ -13,7 +12,6 @@
   font-style: normal;
   font-display: swap;
 }
-/* Global reset and font */
 * {
   font-family: "iMWriting Nerd Font", "Symbols Nerd Font";
   box-sizing: border-box;
@@ -21,13 +19,11 @@
   padding: 0;
 }
 
-/* Body styles */
 body {
   font-family: "iMWriting Nerd Font", "Symbols Nerd Font";
   color: rgb(200, 200, 200);
 }
 
-/* Header section */
 header {
   display: flex;
   justify-content: center;
@@ -35,7 +31,6 @@ header {
   background-color: rgb(20, 20, 24);
   width: 100%;
   min-height: 8vh;
-  /* Header inner container */
 }
 header .hcontent {
   display: flex;
@@ -43,7 +38,6 @@ header .hcontent {
   justify-content: space-between;
   min-width: 50%;
   position: relative;
-  /* Links in header (logo/title) */
 }
 header .hcontent a {
   color: inherit;
@@ -59,9 +53,6 @@ header .hcontent a h1 {
   color: inherit;
   color: rgb(200, 200, 200);
 }
-header .hcontent {
-  /* Menu toggle button (for small screens) */
-}
 header .hcontent .menu-toggle {
   background: none;
   border: none;
@@ -72,15 +63,9 @@ header .hcontent .menu-toggle span {
   padding: 1rem;
   color: rgb(200, 200, 200);
 }
-header .hcontent {
-  /* Collapsible nav container */
-}
 header .hcontent .collapse {
   display: flex;
   visibility: visible;
-}
-header .hcontent {
-  /* Navigation links */
 }
 header .hcontent .nav {
   display: flex;
@@ -95,14 +80,10 @@ header .hcontent .nav a {
   text-align: center;
   color: rgb(200, 200, 200);
 }
-header .hcontent .nav {
-  /* Selected page indicator */
-}
 header .hcontent .nav .selected {
   border-bottom: 4px solid rgb(200, 200, 200);
 }
 
-/* Main content section */
 main {
   display: flex;
   justify-content: center;
@@ -112,7 +93,6 @@ main {
   background-color: rgb(28, 28, 32);
 }
 
-/* Footer section */
 footer {
   display: flex;
   flex-direction: column;
@@ -125,9 +105,6 @@ footer {
 footer p {
   margin-left: 2rem;
   margin-right: 2rem;
-}
-footer {
-  /* Hidden text, just for fun */
 }
 footer .hidden {
   padding-top: 1rem;
@@ -142,19 +119,14 @@ footer .hidden {
   justify-content: space-between;
   margin: 10vh;
   width: 50%;
-  /* Profile image */
 }
 .home img {
   max-width: 256px;
   height: auto;
 }
-.home {
-  /* “About me” text block */
-}
 .home .aboutme {
   display: flex;
   flex-direction: column;
-  /* Highlighted name with animated gradient */
 }
 .home .aboutme .namehl {
   font-family: "iMWriting Nerd Font", "Symbols Nerd Font";
@@ -165,7 +137,6 @@ footer .hidden {
   color: transparent;
   display: inline-block;
   animation: gradient-rotate 8s linear infinite;
-  /* Gradient animation */
 }
 @keyframes gradient-rotate {
   0% {
@@ -179,7 +150,6 @@ footer .hidden {
   }
 }
 
-/* About section main container */
 .about {
   display: flex;
   flex-direction: column;
@@ -187,20 +157,15 @@ footer .hidden {
   justify-content: space-between;
   width: 50%;
   margin: 4rem;
-  /* Profile block (image + short description) */
 }
 .about .profile {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* Profile image */
 }
 .about .profile img {
   max-width: 256px;
   height: auto;
-}
-.about .profile {
-  /* Text description next to image */
 }
 .about .profile .description {
   display: flex;
@@ -213,20 +178,15 @@ footer .hidden {
   padding-top: 1rem;
   border-top: 2px solid rgb(200, 200, 200);
 }
-.about {
-  /* Main content section (skills, experience, etc.) */
-}
 .about .content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* Each content block inside "content" */
 }
 .about .content div {
   border-top: 1px solid rgba(200, 200, 200, 0.4);
   padding-top: 1rem;
   margin-top: 2rem;
-  /* Section title */
 }
 .about .content div h2 {
   text-transform: uppercase;
@@ -234,16 +194,12 @@ footer .hidden {
   text-align: center;
   margin: 1rem;
 }
-.about .content div {
-  /* Custom list styling */
-}
 .about .content div .list {
   list-style: "\f444  ";
   margin-bottom: 1rem;
   text-align: left;
   padding-left: 8rem;
   padding-right: 8rem;
-  /* Nested lists (for sub-items) */
 }
 .about .content div .list ul {
   list-style: "\f054  ";
@@ -253,18 +209,13 @@ footer .hidden {
   text-align: left;
 }
 
-/* Projects page content wrapper */
 .pcontent {
   margin-top: 4rem;
   margin-bottom: 4rem;
-  /* Page title */
 }
 .pcontent h1 {
   text-align: center;
   margin-bottom: 2vh;
-}
-.pcontent {
-  /* Container for all project cards */
 }
 .pcontent .projectcards {
   display: flex;
@@ -272,7 +223,6 @@ footer .hidden {
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  /* Individual project card */
 }
 .pcontent .projectcards .card {
   display: flex;
@@ -280,24 +230,17 @@ footer .hidden {
   justify-content: space-between;
   background-color: rgb(20, 20, 24);
   border: 2px solid rgba(200, 200, 200, 0.4);
-  /* Card image */
 }
 .pcontent .projectcards .card .card-img-top {
   margin-top: 1rem;
   align-self: center;
   width: 80%;
 }
-.pcontent .projectcards .card {
-  /* Card text and content area */
-}
 .pcontent .projectcards .card .card-body {
   display: flex;
   flex-direction: column;
   height: 100%;
   color: rgb(200, 200, 200);
-}
-.pcontent .projectcards .card {
-  /* Card button styling */
 }
 .pcontent .projectcards .card .btn {
   margin-top: auto;
@@ -316,7 +259,6 @@ footer .hidden {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Styles for the Posts page layout */
 .postcontent {
   display: flex;
   flex-direction: column;
@@ -324,66 +266,46 @@ footer .hidden {
   margin-bottom: 4rem;
   margin-top: 4rem;
   width: 50%;
-  /* Main title section */
 }
 .postcontent h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.postcontent {
-  /* Container for all post cards */
-}
 .postcontent .postscards a {
   text-decoration: none;
   color: rgb(200, 200, 200);
-  /* Individual post card style */
 }
 .postcontent .postscards a .card {
   display: flex;
   background-color: rgb(20, 20, 24);
   border: 2px solid rgba(200, 200, 200, 0.4);
   transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
-  /* Hover animation for depth and interaction */
 }
 .postcontent .postscards a .card:hover {
   transform: scale(1.02);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
-.postcontent .postscards a .card {
-  /* Slightly reduced scale when pressed */
-}
 .postcontent .postscards a .card:active {
   transform: scale(1);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-}
-.postcontent .postscards a {
-  /* Bootstrap grid alignment for post card content */
 }
 .postcontent .postscards a .row .col-md-8 .card-body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  /* Post title */
 }
 .postcontent .postscards a .row .col-md-8 .card-body .card-title {
   color: rgb(200, 200, 200);
 }
-.postcontent .postscards a .row .col-md-8 .card-body {
-  /* Post excerpt or summary text */
-}
 .postcontent .postscards a .row .col-md-8 .card-body .card-text {
   color: rgb(200, 200, 200);
-}
-.postcontent .postscards a .row .col-md-8 .card-body {
-  /* Metadata such as date or category */
 }
 .postcontent .postscards a .row .col-md-8 .card-body .text-secondary {
   color: rgba(200, 200, 200, 0.4);
 }
 
-/* Contact form main container */
 .contact {
   display: flex;
   flex-direction: column;
@@ -394,7 +316,6 @@ footer .hidden {
   background-color: rgb(20, 20, 24);
   border-radius: 1rem;
   border: 2px solid rgba(200, 200, 200, 0.4);
-  /* Input fields (name, email, etc.) */
 }
 .contact input {
   min-width: 100%;
@@ -406,14 +327,8 @@ footer .hidden {
   border: 2px solid rgba(200, 200, 200, 0.4);
   color: rgb(200, 200, 200);
 }
-.contact {
-  /* Input placeholder styling */
-}
 .contact input::placeholder {
   color: rgba(200, 200, 200, 0.4);
-}
-.contact {
-  /* Message textarea styling */
 }
 .contact textarea {
   min-height: 8rem;
@@ -429,14 +344,8 @@ footer .hidden {
   vertical-align: top;
   color: rgb(200, 200, 200);
 }
-.contact {
-  /* Textarea placeholder styling */
-}
 .contact textarea::placeholder {
   color: rgba(200, 200, 200, 0.4);
-}
-.contact {
-  /* Submit button styling */
 }
 .contact button {
   align-self: center;
@@ -448,22 +357,15 @@ footer .hidden {
   border-radius: 4px;
   border: 2px solid rgba(200, 200, 200, 0.4);
   transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
-  /* Hover effect */
 }
 .contact button:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
-.contact button {
-  /* Active (pressed) effect */
-}
 .contact button:active {
   transform: scale(1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.contact button {
-  /* Inner link (used as a fallback instead of JS form submission) */
 }
 .contact button a {
   text-decoration: none;
@@ -471,7 +373,6 @@ footer .hidden {
 }
 
 @media (max-width: 787.98px) {
-  /* Header adjustments */
   header {
     padding: 1rem;
   }
@@ -482,13 +383,9 @@ footer .hidden {
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
-    /* Logo / Title */
   }
   header .hcontent h1 {
     margin: 0;
-  }
-  header .hcontent {
-    /* Menu toggle button (mobile navigation) */
   }
   header .hcontent .menu-toggle {
     flex-direction: column;
@@ -498,20 +395,13 @@ footer .hidden {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*Rotate icon when menu is open*/
   }
   header .hcontent .menu-toggle[aria-expanded=true] .menu-icon {
     transform: rotate(180deg);
   }
-  header .hcontent .menu-toggle {
-    /* Smooth rotation animation for icon */
-  }
   header .hcontent .menu-toggle .menu-icon {
     display: inline-block;
     transition: transform 0.3s ease-in-out;
-  }
-  header .hcontent {
-    /* Mobile nav layout */
   }
   header .hcontent .nav {
     flex-direction: column;
@@ -524,9 +414,6 @@ footer .hidden {
   header .hcontent .nav a {
     min-width: 80px;
   }
-  header .hcontent {
-    /* Collapsible behavior for mobile menu */
-  }
   header .hcontent .collapse.show {
     display: flex;
     flex-direction: column;
@@ -537,12 +424,10 @@ footer .hidden {
   }
 }
 @media (max-width: 991.98px) {
-  /* Home section */
   .home {
     flex-direction: column;
     width: 90%;
     margin: 2rem auto;
-    /* Profile image adjustments */
   }
   .home img {
     order: -1;
@@ -554,7 +439,6 @@ footer .hidden {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    /* Stack profile vertically */
   }
   .about .profile {
     width: 90%;
@@ -562,23 +446,17 @@ footer .hidden {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* Ensure text stays below the image */
   }
   .about .profile .description {
     width: 100%;
     order: 1;
   }
-  .about {
-    /* Adjust inner content layout */
-  }
   .about .content div {
     width: 100%;
-    /* Reduce padding for smaller viewports */
   }
   .about .content div .list {
     padding-left: 4rem;
     padding-right: 4rem;
-    /* Compact nested list spacing */
   }
   .about .content div .list ul {
     padding-left: 1rem;
@@ -586,20 +464,17 @@ footer .hidden {
 }
 @media (max-width: 767.98px) {
   .postcontent {
-    /* Expand content width for better readability on smaller screens */
     width: 90%;
   }
 }
 @media (max-width: 991.98px) {
   .contact {
-    /* Reduce horizontal padding and increase width for smaller screens */
     width: 60%;
     padding: 2rem;
   }
 }
 @media (max-width: 787.98px) {
   .contact {
-    /* Full width layout with minimal padding for compact devices */
     width: 90%;
     padding: 1rem;
   }

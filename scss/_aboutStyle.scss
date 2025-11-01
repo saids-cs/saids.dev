@@ -1,7 +1,6 @@
 @use 'variables' as vars;
 
-/* About section main container */
-.about {
+.about { // About section main container
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,20 +8,17 @@
     width: 50%;
     margin: 4rem;
 
-    /* Profile block (image + short description) */
-    .profile {
+    .profile { // Profile block (image + short description)
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        /* Profile image */
-        img {
+        img { // Profile image
             max-width: 256px;
             height: auto; // Keep proportions
         }
 
-        /* Text description next to image */
-        .description {
+        .description { // Text description next to image
             display: flex;
             flex-direction: column;
             h1 {
@@ -35,36 +31,31 @@
         }
     }
 
-    /* Main content section (skills, experience, etc.) */
-    .content {
+    .content { // Main content section (skills, experience, etc.)
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-        /* Each content block inside "content" */
-        div {
+        div { // Each content block inside "content"
             border-top: 1px solid vars.$details; // Section separator
             padding-top: 1rem;
             margin-top: 2rem;
 
-            /* Section title */
-            h2 {
+            h2 { // Section title
                 text-transform: uppercase;
                 letter-spacing: 1px;
                 text-align: center;
                 margin: 1rem;
             }
 
-            /* Custom list styling */
-            .list {
+            .list { // Custom list styling
                 list-style: " "; // Custom bullet symbol
                 margin-bottom: 1rem;
                 text-align: left;
                 padding-left: 8rem;
                 padding-right: 8rem;
-
-                /* Nested lists (for sub-items) */
-                ul {
+                
+                ul { // Nested lists (for sub-items)
                     list-style: " "; // Symbol for sub-items
                     padding-left: 2rem;
                     margin-top: 1rem;

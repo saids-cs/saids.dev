@@ -1,7 +1,6 @@
 @use 'variables' as vars;
 
-/* Contact form main container */
-.contact {
+.contact { // Contact form main container
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,8 +11,7 @@
     border-radius: 1rem;
     border: 2px solid vars.$details;
 
-    /* Input fields (name, email, etc.) */
-    input {
+    input { // Input fields (name, email, etc.)
         min-width: 100%;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -24,13 +22,11 @@
         color: vars.$fontColor;
     }
 
-    /* Input placeholder styling */
-    input::placeholder {
+    input::placeholder { // Input placeholder styling
         color: vars.$details;
     }
 
-    /* Message textarea styling */
-    textarea {
+    textarea { // Message textarea styling
         min-height: 8rem;
         min-width: 100%;
         margin-top: 1rem;
@@ -45,13 +41,11 @@
         color: vars.$fontColor;
     }
 
-    /* Textarea placeholder styling */
-    textarea::placeholder {
+    textarea::placeholder { // Textarea placeholder styling
         color: vars.$details;
     }
 
-    /* Submit button styling */
-    button {
+    button { // Submit button styling
         align-self: center;
         width: 50%;
         margin: 1rem;
@@ -62,21 +56,18 @@
         border: 2px solid vars.$details;
         transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 
-        /* Hover effect */
-        &:hover {
+        &:hover { // Hover effect
             transform: scale(1.1);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
             z-index: 10;
         }
 
-        /* Active (pressed) effect */
-        &:active {
+        &:active { // Active (pressed) effect
             transform: scale(1);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
-        /* Inner link (used as a fallback instead of JS form submission) */
-        a {
+        a { // Inner link (used as a fallback instead of JS form submission)
             text-decoration: none;
             color: vars.$fontColor;
         }

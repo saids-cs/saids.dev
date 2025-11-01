@@ -1,24 +1,18 @@
 @use 'variables' as vars;
 
-
-/* Global reset and font */
-* {
+* { // Global reset and font
     font-family: "iMWriting Nerd Font", "Symbols Nerd Font"; // default fonts
     box-sizing: border-box; // Include padding and border in width/height
     margin: 0; // Remove default margin
     padding: 0; // Remove default padding
 }
 
-
-/* Body styles */
-body {
+body { // Body styles
     font-family: 'iMWriting Nerd Font', 'Symbols Nerd Font';
     color: vars.$fontColor; // Main font color
 }
 
-
-/* Header section */
-header {
+header { // Header section
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,16 +20,14 @@ header {
     width: 100%;
     min-height: 8vh;
 
-    /* Header inner container */
-    .hcontent {
+    .hcontent { // Header inner container
         display: flex;
         align-items: center;
         justify-content: space-between;
         min-width: 50%;
         position: relative;
 
-        /* Links in header (logo/title) */
-        a {
+        a { // Links in header (logo/title)
             color: inherit;
             text-decoration: none;
             color: vars.$fontColor;
@@ -50,8 +42,7 @@ header {
             }
         }
 
-        /* Menu toggle button (for small screens) */
-        .menu-toggle {
+        .menu-toggle { // Menu toggle button (for small screens)
             background: none;
             border: none;
             cursor: pointer;
@@ -62,14 +53,12 @@ header {
             }
         }
 
-        /* Collapsible nav container */
-        .collapse {
+        .collapse { // Collapsible nav container
             display: flex;
             visibility: visible;
         }
 
-        /* Navigation links */
-        .nav {
+        .nav { // Navigation links
             display: flex;
             flex-direction: row;
             gap: 1rem;
@@ -82,16 +71,14 @@ header {
                 color: vars.$fontColor;
             }
 
-            /* Selected page indicator */
-            .selected {
+            .selected { // Selected page indicator
                 border-bottom: 4px solid vars.$fontColor;
             }
         }
     }
 }
 
-/* Main content section */
-main {
+main { // Main content section
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,8 +87,7 @@ main {
     background-color: vars.$bgColor1; // Primary background color
 }
 
-/* Footer section */
-footer {
+footer { // Footer section
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,8 +100,7 @@ footer {
         margin-right: 2rem;
     }
 
-    /* Hidden text, just for fun */
-    .hidden {
+    .hidden { // Hidden text, just for fun
         padding-top: 1rem;
         margin-left: 2rem;
         margin-right: 2rem;

@@ -1,14 +1,12 @@
 @media (max-width: 991.98px) {
-    .contact {
-        /* Reduce horizontal padding and increase width for smaller screens */
+    .contact { // Reduce horizontal padding and increase width for smaller screens
         width: 60%;
         padding: 2rem;
     }
 }
 
 @media (max-width: 787.98px) {
-    .contact {
-        /* Full width layout with minimal padding for compact devices */
+    .contact { // Full width layout with minimal padding for compact devices
         width: 90%;
         padding: 1rem;
     }

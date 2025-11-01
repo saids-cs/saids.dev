@@ -4,33 +4,28 @@
         margin-left: 0;
         margin-right: 0;
 
-        /* Stack profile vertically */
-        .profile {
+        .profile { // Stack profile vertically
             width: 90%;
             display: flex;
             flex-direction: column; // Change layout from row -> column
             align-items: center;
             text-align: center;
 
-            /* Ensure text stays below the image */
-            .description {
+            .description { // Ensure text stays below the image
                 width: 100%;
                 order: 1; // Forces description to appear after the image
             }
         }
 
-        /* Adjust inner content layout */
-        .content {
+        .content { // Adjust inner content layout
             div {
                 width: 100%;
 
-                /* Reduce padding for smaller viewports */
-                .list {
+                .list { // Reduce padding for smaller viewports
                     padding-left: 4rem;
                     padding-right: 4rem;
-
-                    /* Compact nested list spacing */
-                    ul {
+                    
+                    ul { // Compact nested list spacing
                         padding-left: 1rem;
                     }
                 }

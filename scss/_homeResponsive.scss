@@ -1,13 +1,10 @@
-@media (max-width: 991.98px) {
-
-    /* Home section */
-    .home {
+@media (max-width: 991.98px) { // Responsive layout adjustments for smaller screens
+    .home { // Home section
         flex-direction: column; // Stack content vertically instead of side-by-side
         width: 90%;             // Reduce width for better fit on narrow screens
         margin: 2rem auto;      // Center horizontally with smaller vertical spacing
 
-        /* Profile image adjustments */
-        img {
+        img { // Profile image adjustments
             order: -1;          // Move image above the text block
             max-width: 200px;   // Scale down image for mobile devices
         }
