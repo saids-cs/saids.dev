@@ -69,10 +69,36 @@ header { // Header section
                 min-width: fit-content;
                 text-align: center;
                 color: vars.$fontColor;
+                position: relative; // Necessary to position the border
+                padding-bottom: 0.2rem; // Space for the border
+
+                &::after { // Begins hidden for the elements of <a>
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 0; // Begins hidden
+                    height: 4px; 
+                    background-color: vars.$fontColor;
+                    
+                    // Apply the transition for the property 'width'
+                    background-color: vars.$details;
+                    transform: translateX(-50%);
+                    transition: width 0.2s ease-out; 
+                }
             }
 
-            .selected { // Selected page indicator
-                border-bottom: 4px solid vars.$fontColor;
+            a:not(.selected):hover::after { // Animation when hovering over the element if it is not the selected one
+                width: 100%; // It makes the border slide and appear
+            }
+
+            .selected {
+                &::after {
+                    background-color: vars.$fontColor; 
+                    left: 50%; 
+                    transform: translateX(-50%);
+                    width: 100%; // The border is always visible for the selected element
+                }
             }
         }
     }

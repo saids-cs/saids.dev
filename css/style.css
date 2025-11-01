@@ -79,9 +79,29 @@ header .hcontent .nav a {
   min-width: fit-content;
   text-align: center;
   color: rgb(200, 200, 200);
+  position: relative;
+  padding-bottom: 0.2rem;
 }
-header .hcontent .nav .selected {
-  border-bottom: 4px solid rgb(200, 200, 200);
+header .hcontent .nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  background-color: rgb(200, 200, 200);
+  background-color: rgba(200, 200, 200, 0.4);
+  transform: translateX(-50%);
+  transition: width 0.2s ease-out;
+}
+header .hcontent .nav a:not(.selected):hover::after {
+  width: 100%;
+}
+header .hcontent .nav .selected::after {
+  background-color: rgb(200, 200, 200);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
 }
 
 main {
