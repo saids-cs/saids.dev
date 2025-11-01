@@ -22,7 +22,7 @@ Just open the **index.html** into you browser.
 ## 📁 Project Structure
 
 The code is clearly organized and includes comments to facilitate navigation and maintenance.
-```
+
 saids.dev/
 ├── assets/ # Recursos estáticos (imágenes, fuentes, iconos, etc.)
 ├── css/ # Archivos CSS compilados y su "source map"
@@ -38,7 +38,7 @@ saids.dev/
 │ ├── _variables.scss # Definición de colores, fuentes y otros valores reusables
 │ └── _generalStyle.scss # Estilos generales, resets y utilidades
 └── index.html # Página de inicio / Landing Page
-```
+
 ## ⚙️ Development Process (If you wish to modify the styles)
 
 If you plan to modify the `.SCSS` files, you will need to compile the code to CSS.
