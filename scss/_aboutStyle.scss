@@ -21,9 +21,13 @@
         .description { // Text description next to image
             display: flex;
             flex-direction: column;
-            h1 {
+
+            h2 {
+                font-size: 2.4rem;
                 margin-bottom: 1rem; // Space between title and paragraph
+                font-weight: bold;
             }
+
             p {
                 padding-top: 1rem;
                 border-top: 2px solid rgba(200, 200, 200, 1); // Subtle divider line
@@ -41,7 +45,8 @@
             padding-top: 1rem;
             margin-top: 2rem;
 
-            h2 { // Section title
+            h3 { // Section title
+                font-size: 2rem;
                 text-transform: uppercase;
                 letter-spacing: 1px;
                 text-align: center;

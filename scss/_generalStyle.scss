@@ -1,14 +1,13 @@
 @use 'variables' as vars;
 
 * { // Global reset and font
-    font-family: "iMWriting Nerd Font", "Symbols Nerd Font"; // default fonts
     box-sizing: border-box; // Include padding and border in width/height
     margin: 0; // Remove default margin
     padding: 0; // Remove default padding
 }
 
 body { // Body styles
-    font-family: 'iMWriting Nerd Font', 'Symbols Nerd Font';
+    font-family: 'iMWriting Nerd Font', 'Symbols Nerd Font'; // default fonts
     color: vars.$fontColor; // Main font color
 }
 

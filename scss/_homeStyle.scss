@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // margin: 10vh;
     width: 50%;
     
     img { // Profile image
@@ -13,6 +12,11 @@
     .aboutme { // “About me” text block
         display: flex;
         flex-direction: column;
+
+        h2 {
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
 
         .namehl { // Highlighted name with animated gradient
             font-family: 'iMWriting Nerd Font', 'Symbols Nerd Font';
